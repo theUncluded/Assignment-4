@@ -13,9 +13,18 @@ button2.onclick = function() {
   text.innerText = "No, I'm right";
 }
 */
-//Q2
-var headline = document.querySelector('.header')
+//Q2 
+/*
+var headline = document.querySelector(".header")
 
 headline.onmouseover = function() {
 	alert("Hey, I told you not to hover over me!");
+}
+*/
+
+//Q3
+const headline = document.querySelector(".header")
+
+window.onkeypress = function(input) {
+  headline.innerText = input.key;
 }
