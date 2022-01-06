@@ -23,8 +23,25 @@ headline.onmouseover = function() {
 */
 
 //Q3
+/*
 const headline = document.querySelector(".header")
 
 window.onkeypress = function(input) {
   headline.innerText = input.key;
 }
+*/
+
+//Q4
+let button = document.querySelector(".button")
+let head = document.querySelector(".header")
+function validation(){
+    let passwordIn = document.form.password.value
+
+    if(passwordIn !== '12345'){
+        alert('incorrect')
+        return false
+    }
+    head.innerText = 'The information in the form is correct';
+}
+
+button.onclick = validation()
